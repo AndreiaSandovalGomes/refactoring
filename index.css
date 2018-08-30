@@ -1,3 +1,6 @@
+body{
+  -webkit-appearance: none;
+}
 .title {
   text-align: center;
   margin: 50px 0 50px 0;
@@ -17,9 +20,9 @@
 .tasks-list-item {
   padding-top: 15px;
   padding-left: 15px;
-    padding-right: 15px;
+  padding-right: 15px;
   padding-bottom: 15px;
-       display: block;
+  display: block;
   background-color: #ececec;
   border-bottom: 5px pink;
   margin: 0 0 10px 0;
@@ -28,17 +31,18 @@
 }
 
 .tasksList {
-        font-family: "Arial";
-        width: 40%;
+  font-family: "Arial";
+  width: 40%;
 }
-.tasks-list-item { color: white; }
+.tasks-list-item {
+  color: black;
+}
 
 select {
   border: none;
-background: none;
--webkit-appearance: none;
-border-bottom: 2px solid black;
-font-size: 28px;
-margin-left: 10px;
-border-radius: 0;
+  background: none;
+  border-bottom: 2px solid black;
+  font-size: 28px;
+  margin-left: 10px;
+  border-radius: 0;
 }

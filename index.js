@@ -1,11 +1,17 @@
 // data is a variable from data.js
 $(document).ready(() => {
-  var usersName = [];
-  for (userData of data) {
+  var usersName = data.map((userData) => {
     if (!usersName.includes(userData.name)) {
       usersName.push(userData.name);
     }
-  }
+  })
+
+
+  // for (userData of data) {
+  //   if (!usersName.includes(userData.name)) {
+  //     usersName.push(userData.name);
+  //   }
+
 
   for (name of usersName) {
     $(".mySelector").append(`<option value="${name}">${name}</option>`);
@@ -16,7 +22,7 @@ $(document).ready(() => {
     var taskList = document.getElementsByClassName("tasksList")[0];
     taskList.innerHTML = "";
 
-    let selectedUserName = e.target.value;
+    const selectedUserName = e.target.value;
 
     // o _ é o Loadash. O que é isso?
     var filteredArray = _.filter(data, {name: selectedUserName});
